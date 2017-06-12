@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Server Management</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="toggled">
+
+         <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Server management
+                    </a>
+                </li>
+                <li>
+                    <a href="add.html">Add Server</a>
+                </li>
+                <li>
+                    <a href="remove.html">Remove Server</a>
+                </li>
+                <li>
+                    <a href="replace.html">Replace Server</a>
+                </li>
+                <li>
+                    <a href="case_status.html">Case status</a>
+                </li>
+                <li>
+                    <a href="devices.html">Devices</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Add Server</h1>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Region name</label>
+                                <input type="text" class="form-control" id="region">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Rack</label>
+                                <input type="text" class="form-control" id="rack">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Machine number</label>
+                                <input type="text" class="form-control" id="machine">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">IP Address</label>
+                                <input type="text" class="form-control" id="ip">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Serial number</label>
+                                <input type="text" class="form-control" id="sn">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Product</label>
+                                <input type="text" class="form-control" id="product">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">If you have excel file.</p>
+                            </div>
+                           <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
