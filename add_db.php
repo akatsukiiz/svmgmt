@@ -1,3 +1,14 @@
+<?php
+
+$region_name = $_POST["region"];
+$rack = $_POST["rack"];
+$machine_number = $_POST["machine"];
+$ip_address = $_POST["ip"];
+$serial_number = $_POST["sn"];
+$product = $_POST["product"];
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +41,7 @@
 
     <div id="wrapper" class="toggled">
 
-         <!-- Sidebar -->
+        <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -62,39 +73,14 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Add Server</h1>
-                        <form action="add_db.php" method="post">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Region name</label>
-                                <input type="text" class="form-control" id="region" name="region">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Rack</label>
-                                <input type="text" class="form-control" id="rack" name="rack">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Machine number</label>
-                                <input type="text" class="form-control" id="machine" name="machine">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">IP Address</label>
-                                <input type="text" class="form-control" id="ip" name="ip">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Serial number</label>
-                                <input type="text" class="form-control" id="sn" name="sn">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Product</label>
-                                <input type="text" class="form-control" id="product" name="product">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputFile">File input</label>
-                                <input type="file" id="exampleInputFile">
-                                <p class="help-block">If you have excel file.</p>
-                            </div>
-                           <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
+                        <h1>Server description</h1>
+                        Region :<?php echo $region_name; ?><br>
+                        Rack : <?php echo $rack; ?><br>
+                        Machine number : <?php echo $machine_number; ?><br>
+                        Ip address : <?php echo $ip_address; ?><br>
+                        Serial number : <?php echo $serial_number; ?><br>
+                        Product name : <?php echo $product; ?><br>
+
                     </div>
                 </div>
             </div>
