@@ -11,5 +11,8 @@
 		<div class="left-side">
 			Menu
 		</div>
+		<div class="button">
+			Contact
+		</div>
 	</body>
 </html>
