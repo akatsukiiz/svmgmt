@@ -5,6 +5,11 @@
 		<title>Server Management</title>
 	</head>
 	<body>
-		Add server
+		<div class="top">
+			Server Management
+		</div>
+		<div class="left-side">
+			Menu
+		</div>
 	</body>
 </html>
